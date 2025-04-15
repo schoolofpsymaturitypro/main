@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+.title {
+margin-top: 40px !important;    
+line-height: 30px;
+}
+
+/*____________ШАПКА_________________*/
+.lesson-number {
+  font-weight: bold; /* Делаем текст жирным */
+  top: 20px;
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  background: #3D9889;
+  padding: 6px 10px; /* 10px сверху и снизу, 5px слева и справа */
+  border-radius: 5px;   
+}
+@media screen and (min-width: 768px) {
+.new-element-class {
+position: relative;
+top: 30px;
+box-sizing: border-box; /* Включаем паддинги и границы в расчет ширины */
+margin-bottom: 60px;
+}
+}
+@media screen and (max-width: 768px) {
+.new-element-class {
+position: relative;
+top: 80px;
+box-sizing: border-box; /* Включаем паддинги и границы в расчет ширины */
+margin-bottom: 60px;
+}
+}
+
+.logo-link img {
+display: none;
+
+}
+
+h1 {
+font-family: 'Oranienbaum';
+font-style: normal;
+font-weight: normal !important;
+color: #292929;
+font-size: 40px;
+}
+
+.breadcrumbs a {    
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #999999;
+}
+.breadcrumbs a:hover  {
+color: #292929 !important;
+text-decoration: none !important;   
+}
+.breadcrumbs a:after{ /* Стрелка слева для мини меню возврата назад "< тренинги" */
+content: "";
+display: inline-block; /* Позволяет задать размеры для псевдоэлемента */
+width: 15px; /* Ширина изображения */
+height: 15px; /* Высота изображения */
+mask: url('https://static.tildacdn.com/tild3236-3233-4137-b865-626135396466/Arrow_10.svg') no-repeat center;
+background-color: #999999; /* Тот самый "цвет" SVG */
+background-size: contain; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
+margin-left: 5px; /* Отступ слева от псевдоэлемента */
+transform: scale(1.4) rotate(180deg);
+position: relative;
+top: 3px;    
+}
+.breadcrumbs a:hover:after{ /* Стрелка слева для мини меню возврата назад "< тренинги" */
+content: "";
+display: inline-block; /* Позволяет задать размеры для псевдоэлемента */
+width: 15px; /* Ширина изображения */
+height: 15px; /* Высота изображения */
+mask: url('https://static.tildacdn.com/tild3236-3233-4137-b865-626135396466/Arrow_10.svg') no-repeat center;
+background-color: #292929; /* Тот самый "цвет" SVG */
+background-size: contain; /* Масштабирует изображение, чтобы оно полностью помещалось в элемент */
+margin-left: 5px; /* Отступ слева от псевдоэлемента */
+transform: scale(1.4) rotate(180deg);
+position: relative;
+top: 3px;    
+}
+
+.page-header {
+margin-top: 5px;    
+}
+
+
+/*____________УРОК_________________*/
+
+
+
+.lesson-list {
+background: transparent;    
+}
+
+
+.gc-main-content{
+background: #fff !important;      
+}
+
+.lesson-list li .info {
+background: #FFF4E2;
+border-left: 0px !important;
+}
+
+.lesson-list li {
+border-radius: 15px;
+}
+
+.lesson-list li .item-image {
+position: absolute !important;
+left: auto;
+top: 30px;
+bottom: auto;
+right: 30px !important;
+height: 180px;
+width: 180px !important;
+
+}
+.hidden-xs {
+display: none;    
+}
+.lesson-list li a {
+background: #FFF4E2;
+}
+
+@media screen and (min-width: 768px) {
+.info{
+margin-left: 20px !important;    
+background: #FFF4E2 !important;
+background-color: #FFF4E2 !important;
+min-height: 140px;
+}
+}
+@media screen and (max-width: 768px) {
+.info{
+margin-left: 20px !important;    
+background: #FFF4E2 !important;
+background-color: #FFF4E2 !important;
+min-height: 170px;
+}
+}
+.user-state-bg{
+background: #FFF4E2 !important;    
+}
+.col-md-8 {
+padding-left: 0;    
+}  
+
+
+@media screen and (min-width: 768px) {
+.lesson-list li .title {
+font-family: 'Oranienbaum' !important;
+color: #292929!important;
+font-size: 30px;
+margin-top: 60px;
+margin-bottom: 16px;
+}
+}
+
+.lesson-list .description {
+font-family: 'Montserrat';
+font-weight: 400 !important;
+color: #717171!important;    
+width: 70%;
+}
+.page-control_stream-view {
+background: #fff;    
+}
+@media screen and (min-width: 768px) {
+.main-page-block {
+margin-left: 100px !important;   
+}
+}
+
+
+
+
+
+/* CSS для поиска*/ /*=============================================================*/
+
+@media screen and (min-width: 768px) {
+#searchWrapper{
+width: 85.6vw !important;      
+    }
+#searchResults{
+margin-top: 5px;
+border: none !important;
+box-shadow: 0px 5px 8.5px rgba(0, 0, 0, 0.5);
+}
+#searchInput {
+color: #292929 !important; /* Цвет введённого текста */
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 550;
+font-size: 14px;
+line-height: 27px;
+letter-spacing: 0.03em;
+}
+    
+#searchInput::placeholder {
+color: #C9C9C9; /* или любой другой */
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 550;
+font-size: 14px;
+line-height: 27px;
+letter-spacing: 0.03em;
+}    
+
+#searchResults h2{
+margin-top: 15px;
+font-size: 14px;
+font-weight: 600;
+color: #3D9889;
+margin-left: 10px;
+}
+.result-item h3{
+margin-top: 10px;
+font-size: 15px;
+font-weight: 600;
+color: #333333;   
+margin-left: 20px;
+}
+.result-item p{
+font-size: 14px;
+font-weight: 500;
+color: #A9A9A9;
+margin-left: 20px;
+}
+.result-item a{
+padding-left: 15px !important;
+padding-right: 15px !important;
+padding-bottom: 5px;
+padding-top: 5px; 
+margin-left: 20px;
+background: linear-gradient(92.7deg, #F3DFBA 25.5%, #FFF5E7 54.5%, #F3DFBA 84%);
+border-radius: 5px;
+color: #292929;
+font-weight: 500 !important;
+font-family: 'Montserrat';
+}
+.result-item img{
+display: none;
+
+}
+.lesson-item{
+margin-bottom: 20px;
+}
+#searchContainer {
+height: 50px;
+width: 40% !important;
+border-radius: 10px !important;
+left: 15%;
+}
+
+#searchWrapper{
+background: #FFEECE;
+height: 70px;
+top: 0;
+bottom: auto;
+position: absolute; 
+}
+}
+
+@media screen and (max-width: 768px) {
+#searchContainerMobile{
+overflow: visible !important;
+}
+#searchInputMobile{
+border-radius: 30px;    
+}
+#searchResultsMobile{
+margin-top: 5px;
+border: none !important;
+box-shadow: 0px 5px 8.5px rgba(0, 0, 0, 0.5);
+width: 90vw !important;
+left: -10vw !important;
+}
+#searchResultsMobile h2{
+margin-top: 15px;
+font-size: 14px;
+font-weight: 400;
+color: #A9A9A9;
+margin-left: 10px;
+}
+.result-item h3{
+margin-top: 10px;
+font-size: 15px;
+font-weight: 600;
+color: #333333;   
+margin-left: 20px;
+}
+.result-item p{
+font-size: 14px;
+font-weight: 500;
+color: #A9A9A9;
+margin-left: 20px;
+}
+.result-item a{
+padding-left: 15px !important;
+padding-right: 15px !important;
+padding-bottom: 5px;
+padding-top: 5px; 
+margin-left: 20px;
+background: linear-gradient(92.7deg, #F3DFBA 25.5%, #FFF5E7 54.5%, #F3DFBA 84%);
+border-radius: 5px;
+color: #FFFFFF;
+}
+.result-item img{
+display: none;
+}
+.lesson-item{
+margin-bottom: 20px;
+}
+#searchContainerMobile{
+left: auto;
+right: 0;
+position: absolute !important;
+box-shadow: 0px 4px 10.5px rgba(0, 0, 0, 0.08);
+margin-top: 5px;
+margin-right: 50px;
+flex-direction: row-reverse;
+}
+.gc-account-leftbar {
+width: 100vw !important;
+}  
+.lesson-list li .title {
+font-family: 'Oranienbaum' !important;
+color: #292929!important;
+font-size: 24px !important;
+margin-bottom: 16px;
+}
+}
