@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+.user-state-not_reached .info::after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(189, 189, 189, 0.01);
+backdrop-filter: blur(4px);
+z-index: 1;
+}
+
+
+.user-state-not_reached .title {
+color: #5D5C5C !important;
+}
+.user-state-not_reached .lesson-number{
+background: #5D5C5C;
+}
+.user-state-not_reached .info{
+background: #DFDFDF !important;
+}
+.user-state-not_reached  .user-state-bg {
+background: #DFDFDF !important;    
+}
+
+
+
+/* Добавляем новые иконки через ::before */
+.menu-item .menu-item-icon {
+  opacity: 0;
+  width: 24px !important; /* Сохраняем место для иконки */
+  height: 24px !important;
+  margin-right: 8px !important; /* Если был отступ */
+}
+
+.menu-item a[title]::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 10px;
+  top: 30px;;
+  transform: translateY(-50%);
+  z-index: 99999 !important;
+}
+
+/* Индивидуальные иконки для каждого пункта */
+.menu-item a[title="Обучение"]::before {
+  background-image: url('https://static.tildacdn.com/tild3039-3039-4136-b166-376436306164/teach-icon-1.svg');
+}
+
+.menu-item a[title="Apps"]::before {
+  background-image: url('https://static.tildacdn.com/tild6633-6361-4131-b530-333131313630/chatium-icon-1_2.svg');
+}
+.menu-item-notifications_button_small::before{
+content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 8px;
+  top: 17px;;
+  transform: translateY(-50%);
+  z-index: 99999 !important;
+  background-image: url('https://static.tildacdn.com/tild6237-3462-4437-a162-346537616136/notifications_button.svg');
+}
+
+
+.menu-item a[title="Сообщения"]::before {
+  background-image: url('https://static.tildacdn.com/tild3933-3231-4535-b633-396432623033/notifications-icon-1.svg');
+}
+
+.menu-item a[title="Сайт"]::before {
+  background-image: url('https://static.tildacdn.com/tild3166-6664-4633-b832-306135333634/site-icon.svg');
+}
+
+.menu-item a[title="Ученики"]::before {
+  background-image: url('https://static.tildacdn.com/tild6663-6539-4234-b865-343839386231/member-icon.svg');
+}
+
+.menu-item a[title="CRM"]::before {
+  background-image: url('https://static.tildacdn.com/tild6131-3835-4163-b066-303963386135/CRM-icob.svg');
+}
+
+.menu-item a[title="Продажи"]::before {
+  background-image: url('https://static.tildacdn.com/tild3432-3264-4666-b232-343164316664/sale-icon.svg');
+}
+
+
+.custom-submenu{
+ margin-left: 40px;   
+}
+
+.menu-item a {
+box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.0) !important;
+
+}
+.gc-account-leftbar .gc-account-user-menu li a {
+background: linear-gradient(92.7deg, #FFEECE 25.5%, #FFF5E7 54.5%, #FFEECE 84%);
+}
+.gc-account-leftbar .gc-account-user-menu li a:hover {
+background: linear-gradient(92.7deg, #F3DFBA 25.5%, #FFF5E7 54.5%, #F3DFBA 84%) ; 
+}
+
+
+.gc-fade-wrapper {
+background: #fff;  
+z-index: -1
+}
+.gc-account-leftbar {
+background: #fff;  
+margin-left: 10px;
+}
+
+.menu-item a[title]::after{
+color: #292929;
+font-family: 'Montserrat';
+font-style: normal;
+font-size: 16px;
+font-weight: 600;
+margin-top: 25px;
+}
+.menu-item-icon {
+margin-top: 13px;    
+}
+.menu-item-notifications_button_small .menu-item-icon {
+margin-top: 0px;     
+}
+.menu-item-profile .menu-item-icon {
+margin-top: 0px;    
+}
+.notify-count {
+color: #3D9889 !important;    
+background: #fff !important;
+}
+.menu-item-teach > a .notify-count {
+margin-top: 13px;   
+}
+.custom-submenu a {
+font-family: 'Montserrat';
+font-weight: 600 !important;
+color: #292929 !important;
+}
+.custom-submenu li:hover {
+    background: transparent !important;
+}
+.custom-submenu li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: currentColor; /* цвет подчеркивания = цвет текста */
+    transition: width 0.3s ease;
+}
+
+.custom-submenu li:hover a::after {
+    width: 100%;
+}
+
+.custom-submenu .notify-count {
+    position: relative !important;
+    top: -4px;
+    left: 45px !important;
+}
+.menu-item.active > a {
+background: linear-gradient(92.7deg, #F3DFBA 25.5%, #FFF5E7 54.5%, #F3DFBA 84%) !important;
+}
+.menu-item.active > a:hover {
+background: linear-gradient(92.7deg, #F3DFBA 25.5%, #FFF5E7 54.5%, #F3DFBA 84%) !important;
+}
+
+
+.selected > a {
+background: linear-gradient(92.7deg, #F3DFBA 25.5%, #FFF5E7 54.5%, #F3DFBA 84%) !important;
+}
+.selected > a:hover {
+background: linear-gradient(92.7deg, #F3DFBA 25.5%, #FFF5E7 54.5%, #F3DFBA 84%) !important;   
+}
+
+#searchWrapper {
+background: #FFEECE !important;      
+}
+.logo-link img {
+top: -40px !important;    
+}
+.menu-item-notifications > a .notify-count {
+top: 20px;    
+}
+
+.menu-item-notifications_button_small::after {
+    content: "Уведомления";
+    display: inline-block;
+    color: #292929;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    z-index: 9999;
+    top: 7px;
+    left: 46px;
+    pointer-events: none;
+}
+
+.gc-account-leftbar .menu-item-label {
+display: none    
+}
+
+
+.menu-item-teach > a .notify-count {
+top: 10px !important; 
+left: 150px !important;     
+}
+.menu-item-notifications > a .notify-count {
+top: 20px !important; 
+left: 150px !important;     
+}
+ 
+/.gc-account-user-submenu-bar {
+display: none !important;    
+}
+.gc-account-user-submenu-bar-cms,
+.gc-account-user-submenu-bar-user,
+.gc-account-user-submenu-bar-tasks,
+.gc-account-user-submenu-bar-notifications,
+.gc-account-user-submenu-bar-sales {
+  display: none !important;
+}
+.modal-content {
+width: 60vw;
+margin-left: 100px;
+}
+
+.training-row td{
+width: 100% !important;    
+margin-left: 34px;
+}
+.training-row td a{
+width: 80% !important;    
+}
+
+.stream-title::before{
+top: -30px !important;
+font-family: 'Montserrat'!important;
+font-style: normal !important;
+font-weight: 600 !important;
+font-size: 12px !important;
+line-height: 17px !important;
+color: #FFFFFF !important; 
+background: #3D9889 !important;
+padding: 6px 6px !important;
+border-radius: 5px !important;
+}
+
+.stream-table tr td{
+min-height: 170px !important;
+background: #FFF4E2;
+margin-bottom: 25px !important;
+display: block;
+gap: 20px ; /* расстояние между дочерними элементами */
+border-radius: 15px; 
+}
+.stream-table {
+  table-layout: auto; /* обязательно! */
+  width: 100%;
+}
+.stream-table tr td:hover {
+background: #EDDFC8 !important;
+}
+.menu-item-profile .menu-item-icon {
+opacity: 1;
+transform: scale(2);
+position: relative;
+top: 20px !important;
+left: 20px;
+}
+
+.stream-title {
+  padding-top: 5px !important;
+  margin-top: 30px !important;
+  font-family: 'Oranienbaum' !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  color: #292929 !important;
+  font-size: 25px !important;
+  display: inline-block !important; /* или block */
+  max-width: 550px !important;
+  white-space: normal !important;
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+  text-align: left !important;
+  line-height: 27px !important;
+  margin-bottom: 0px !important;
+}
+
+.gc-user-user .training-row div {
+display: none;   
+}
+
+.xdget-visible-to-bg- img {
+display: none;    
+}
+[class*="training-image-after-"]::after {
+  position: absolute !important; 
+  top: 20px !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: 15px !important;
+  min-height: 130px !important;
+  width: 130px !important;
+  background-size: cover !important;
+  border-radius: 15px !important;
+}
+
+
+@media screen and (max-width: 768px) {
+.training-row td{
+width: 100% !important;    
+margin-left: 27px;
+}
+.main-page-block {
+margin-left: 0px !important;        
+}
+.stream-title {
+  padding-top: 0px;
+  margin-top: 30px;
+  font-family: 'Oranienbaum';
+  font-style: normal;
+  font-weight: normal !important;
+  color: #292929;
+  font-size: 16px !important;
+  display: inline-block; /* или block */
+  max-width: 550px;
+  white-space: normal !important;
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+  text-align: left;
+  line-height: 17px;
+  margin-bottom: 0px;
+  max-width: 80%;
+}
+[class*="training-image-after-"]::after {
+  position: absolute !important; 
+  top: 15px;
+  bottom: auto;
+  left: auto;
+  right: 10px;
+  min-height: 110px !important;
+  width: 110px;
+  background-size: cover;
+  border-radius: 15px;
+}
+.stream-title::before{
+top: -30px !important;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+line-height: 17px;
+color: #FFFFFF; 
+background: #3D9889;
+padding: 4px 4px;
+border-radius: 5px;
+}
+h1 {
+font-size: 28px;
+margin-right: 0 !important;
+}
+.stream-table tr td{
+min-height: 135px !important;
+background: #FFF4E2;
+margin-bottom: 25px !important;
+display: block;
+border-radius: 15px; 
+}
+.gc-account-leftbar {
+margin-left: 0;
+background: #FFEECE;
+} 
+.training-item a {
+color: #292929;
+font-weight: 600;
+}
+
+.lesson-item a {
+color: #292929;
+font-weight: 600;
+    
+}
+}
+
+
+.error-message-text {
+color: #BF3939;
+margin-left: 5px;
+}
+.breadcrumbs {
+  font-size: 0;
+}
+
+.breadcrumbs a {
+  font-size: 18px; /* или нужный тебе размер */
+}
+
+
+@media screen and (min-width: 768px) {
+.is-stop-lesson {
+position: absolute;    
+}
+.user-state-label-ex {
+color: #BF3939 !important;   
+top: auto;
+bottom: 10px;
+}
+
+.user-state-label-ex::before{
+content: "";
+display: inline-block;
+width: 15px;
+height: 15px;
+background: url(https://static.tildacdn.com/tild3930-3935-4135-b535-386232383162/Circle_Warning.svg) left center no-repeat;
+padding-top: 0px;
+background-size: contain;
+margin-left: 0px;
+margin-right: 5px;
+position: relative !important;
+top: 2px;
+}
+.lesson-list li .title {
+margin-top: 40px !important;
+}
+.lesson-list .description {
+margin-top: 10px;
+color: #292929;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+padding-left: 1px;
+}
+
+.lesson-date {
+position: absolute;
+top: auto;
+bottom: 30px;
+}
+
+.lesson-number {
+position: absolute !important;
+top: 10px !important;    
+}
+.lesson-list li .item-image {
+top: 10px;
+right: 10px !important;
+height: 120px !important;
+width: 120px !important;
+border-radius: 10px;
+}
+
+.info {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info:hover {
+  transform: translateY(-5px);
+}
+}
+@media screen and (max-width: 768px) {
+.vmiddle {
+margin-left: 0 !important;
+margin-bottom: 20px !important;
+}
+.lesson-list li .title{
+margin-top: 35px !important;
+}
+
+.user-state-label-ex::before{
+content: "";
+display: inline-block;
+width: 15px;
+height: 15px;
+background: url(https://static.tildacdn.com/tild3930-3935-4135-b535-386232383162/Circle_Warning.svg) left center no-repeat;
+padding-top: 0px;
+background-size: contain;
+margin-left: 0px;
+margin-right: 5px;
+position: relative !important;
+top: 2px;
+}
+.is-stop-lesson {
+position: absolute;    
+}
+
+.user-state-label-ex {
+color: #BF3939 !important;   
+top: auto !important;
+bottom: 40px !important;
+}
+
+.lesson-date {
+position: absolute;
+top: auto;
+bottom: 10px;  
+}
+.lesson-number{
+top: 10px !important;        
+} 
+.lesson-list .description {
+margin-top: 10px;
+color: #292929;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+padding-left: 1px;
+}
+.container{
+margin-top: 0 !important;        
+    }
+.margin-top-notice {
+margin-top: 0 !important;        
+    }
+}
