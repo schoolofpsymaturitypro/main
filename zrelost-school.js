@@ -486,55 +486,65 @@ $(document).ready(function () {
 // Этот блок стилизует элементы уроков
 // ==========================================================
 document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll(".user-state-label.user-state-label-ex");
-    elements.forEach(element => {
-        const text = element.textContent.trim();
-        if (text === "Необходимо выполнить задание (стоп-урок)" || text === "Необходимо выполнить задание") {
-            element.textContent = "Важное задание";
-        }
-    });
-});
+    let maxAttempts = 20;
+    let attempts = 0;
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Задача 1: Замена текста "Недоступен (стоп-урок)" на "Недоступен"
-    const stopLessonElements = document.querySelectorAll(".user-state-label.user-state-label-ex.is-stop-lesson");
-    stopLessonElements.forEach(element => {
-        const text = element.textContent.trim();
-        if (text === "Недоступен (стоп-урок)") {
-            element.textContent = "Недоступен";
-        }
-    });
+    function processLessons() {
+        // 1. Замена текста "Недоступен (стоп-урок)" на "Недоступен"
+        document.querySelectorAll(".user-state-label.user-state-label-ex.is-stop-lesson").forEach(element => {
+            if (element.textContent.trim() === "Недоступен (стоп-урок)") {
+                element.textContent = "Недоступен";
+            }
+        });
 
-    // Задача 2: Добавление текста "Недоступен" для элементов, где его нет
-    const listItems = document.querySelectorAll("li.user-state-not_reached");
-    listItems.forEach(item => {
-        const vmiddleDiv = item.querySelector(".vmiddle"); // Находим div с классом "vmiddle"
-        if (vmiddleDiv && !vmiddleDiv.querySelector(".user-state-label")) {
-            const newLabel = document.createElement("div");
-            newLabel.className = "user-state-label user-state-label-ex";
-            newLabel.textContent = "Недоступен";
-            vmiddleDiv.prepend(newLabel); // Добавляем текст в начало div "vmiddle"
-        }
-    });
-});
+        // 2. Добавление текста "Недоступен" туда, где его нет
+        document.querySelectorAll("li.user-state-not_reached").forEach(item => {
+            const vmiddleDiv = item.querySelector(".vmiddle");
+            if (vmiddleDiv && !vmiddleDiv.querySelector(".user-state-label")) {
+                const newLabel = document.createElement("div");
+                newLabel.className = "user-state-label user-state-label-ex";
+                newLabel.textContent = "Недоступен";
+                vmiddleDiv.prepend(newLabel);
+            }
+        });
 
-// Получаем только td с текстом, исключая td с изображением
-var tdElements = document.querySelectorAll('.lesson-list li table td.item-main-td');
+        // 3. Нумерация уроков (только тем, у кого есть .item-main-td)
+        const tdElements = document.querySelectorAll('.lesson-list li table td.item-main-td');
+        tdElements.forEach((td, index) => {
+            const lessonNumber = index + 1;
+            const lessonIdClass = 'lesson-id-' + lessonNumber;
+            td.classList.add(lessonIdClass);
 
-// Проходимся по каждому элементу и добавляем номер урока
-tdElements.forEach(function(td, index) {
-    var lessonNumber = index + 1; // Нумерация с 1
-
-    var lessonIdClass = 'lesson-id-' + lessonNumber; // Уникальный класс
-    td.classList.add(lessonIdClass); // Добавляем класс
-
-    // Проверим, нет ли уже номера, чтобы избежать дублирования при повторном запуске
-    if (!td.querySelector('.lesson-number')) {
-        var afterElement = document.createElement('span');
-        afterElement.textContent = "Урок №" + lessonNumber;
-        afterElement.classList.add('lesson-number');
-        td.appendChild(afterElement);
+            if (!td.querySelector('.lesson-number')) {
+                const afterElement = document.createElement('span');
+                afterElement.textContent = "Урок №" + lessonNumber;
+                afterElement.classList.add('lesson-number');
+                td.appendChild(afterElement);
+            }
+        });
     }
+
+    function waitForLessons() {
+        const hasLessons = document.querySelectorAll('.lesson-list li').length > 0;
+
+        if (hasLessons) {
+            processLessons();
+
+            // Подключаем наблюдатель на все lesson-list
+            document.querySelectorAll('.lesson-list').forEach(list => {
+                const observer = new MutationObserver(() => processLessons());
+                observer.observe(list, { childList: true, subtree: true });
+            });
+
+        } else if (attempts < maxAttempts) {
+            attempts++;
+            setTimeout(waitForLessons, 300);
+        } else {
+            console.warn("Уроки не были найдены вовремя.");
+        }
+    }
+
+    waitForLessons();
 });
 
 
