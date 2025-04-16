@@ -416,6 +416,41 @@ margin-left: 5px;
 
 
 @media screen and (min-width: 768px) {
+/* Исправление заголовка, даты, описания урока*/
+/* Начало */
+.lesson-list .description {
+position: relative !important;
+margin-top: 0px !important;
+margin-bottom: 30px;
+    
+font-family: 'Montserrat';
+font-style: normal !important;
+font-weight: 500 !important;
+font-size: 16px !important;
+line-height: 22px !important;
+color: #292929 !important;
+}
+.lesson-list li .title {
+max-width: 80% !important;    
+}
+.lesson-list .item-main-td.item-with-image{
+width: 100% !important;    
+}
+.user-state-label-ex{
+position: absolute !important;
+top: 15px !important;
+margin-left: 100px !important;
+}
+.lesson-list li .info table {
+  max-width: 100%;
+  width: 100%;
+  table-layout: fixed;
+}
+.lesson-date {
+bottom: 20px !important;    
+}
+/* конец */
+
 .is-stop-lesson {
 position: absolute;    
 }
