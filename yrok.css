@@ -9,6 +9,14 @@ left: 0 !important;
 z-index: 999999 !important; 
 position: relative;
 }
+.text-left {
+text-align: left !important;    
+max-width: 90%;
+}
+.lt-block-wrapper .container .row{
+margin-top: 25px;
+}
+
 
 @media screen and (min-width: 768px) {
 .standard-page-content {
@@ -417,7 +425,7 @@ width: 105% !important;
 .lesson-navigation a {
 font-family: 'Montserrat' !important;
 font-style: normal !important;
-font-weight: 500 !important;
+font-weight: 700 !important;
 font-size: 11px !important;
 color: #292929 !important;
 }
