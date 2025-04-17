@@ -208,12 +208,6 @@ margin-left: 150px !important;
 margin-top: 100px !important;
 }
 
-.modal-block-content {
-  display: block !important;
-  width: 100% !important; /* или другая нужная ширина */
-  text-align: center !important; /* Центрирует iframe по горизонтали */
-}
-
 
 .center-block{
 max-width: 100% !important;    
