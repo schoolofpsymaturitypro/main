@@ -489,12 +489,6 @@ padding-left: 0px;
 background: #FFEECE    
 }
 
-.modal-block-content > *:not(.text-left) {
-  display: block !important;
-  width: 100% !important; /* или другая нужная ширина */
-  text-align: center; /* Центрирует iframe по горизонтали */
-  padding-right: 0px !important;
-}
 .container{
 padding: 0px;
 }
