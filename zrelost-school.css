@@ -316,19 +316,13 @@ width: 120px !important;
 .stream-title {
   padding-top: 5px !important;
   margin-top: 30px !important;
-  font-family: 'Oranienbaum' !important;
   font-style: normal !important;
-  font-weight: normal !important;
   color: #292929 !important;
-  font-size: 25px !important;
   display: inline-block !important; /* или block */
-  max-width: 550px !important;
   white-space: normal !important;
   word-break: keep-all !important;
   overflow-wrap: break-word !important;
   text-align: left !important;
-  line-height: 27px !important;
-  margin-bottom: 0px !important;
 }
 
 .gc-user-user .training-row div {
@@ -363,20 +357,14 @@ margin-left: 0px !important;
 .stream-title {
   padding-top: 0px;
   margin-top: 30px;
-  font-family: 'Oranienbaum';
   font-style: normal;
-  font-weight: normal !important;
   color: #292929;
-  font-size: 16px !important;
   display: inline-block; /* или block */
-  max-width: 550px;
   white-space: normal !important;
   word-break: keep-all !important;
   overflow-wrap: break-word !important;
   text-align: left;
   line-height: 17px;
-  margin-bottom: 0px;
-  max-width: 80%;
 }
 [class*="training-image-after-"]::after {
   position: absolute !important; 
