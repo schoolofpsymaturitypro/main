@@ -585,3 +585,14 @@ document.addEventListener("DOMContentLoaded", function () {
       moduleCount++;
     });
   });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".user-state-label.user-state-label-ex");
+    elements.forEach(element => {
+        const text = element.textContent.trim();
+        if (text === "Необходимо выполнить задание (стоп-урок)" || text === "Необходимо выполнить задание") {
+            element.textContent = "Важное задание";
+        }
+    });
+});
