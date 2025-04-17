@@ -288,6 +288,11 @@ left: 20px;
 }
 
 @media screen and (max-width: 768px) {
+
+.breadcrumbs {
+margin-top: 70px !important;        
+}
+
 .stream-title {
         max-width: 76% !important;
         font-family: 'Montserrat' !important;
