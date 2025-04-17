@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 /* Добавляем новые иконки через ::before */
+
+@media screen and (min-width: 768px) {
+.gc-modal{
+z-index: 999999 !important;
+left: -700px !important;
+}
+}
+@media screen and (max-width: 768px) {
+.gc-modal{
+z-index: 999999 !important;
+}
+.modal-content {
+width: 90vw !important;
+margin-left: 10px !important;
+    }
+}
+
+
 .menu-item .menu-item-icon {
   opacity: 0;
   width: 24px !important; /* Сохраняем место для иконки */
