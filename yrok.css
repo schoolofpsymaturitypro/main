@@ -12,6 +12,8 @@ position: relative;
 .text-left {
 text-align: left !important;    
 max-width: 90%;
+display: block !important;
+padding-right: 0px !important;
 }
 .lt-block-wrapper .container .row{
 margin-top: 25px;
@@ -493,10 +495,10 @@ padding-left: 0px;
 background: #FFEECE    
 }
 
-.modal-block-content {
+.modal-block-content > *:not(.text-left) {
   display: block !important;
   width: 100% !important; /* или другая нужная ширина */
-  text-align: center !important; /* Центрирует iframe по горизонтали */
+  text-align: center; /* Центрирует iframe по горизонтали */
   padding-right: 0px !important;
 }
 .container{
