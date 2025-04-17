@@ -23,7 +23,7 @@ document.querySelectorAll('[class*="training-row"]').forEach(function(row, index
         width: 100px;
         height: 100px;
         background-image: url('${fullUrl}');
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 10px;
