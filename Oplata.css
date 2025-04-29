@@ -33,6 +33,82 @@
 
 
 
+.gcaMethodRightCell img {
+display: block !important;    
+}
+
+.robokassa-button::after {
+  content: "*оплата иностранной картой";
+  display: block;
+  font-size: 13px;
+  color: #fff;
+  margin-top: 2px;
+}
+.tinkoffcredit-submit-button:hover {
+background: #2A685E !important;    
+}
+.made-RF .gc-payment-method-button {
+position: absolute;
+top: 0 !important;
+cursor: default;
+width: 0px !important;
+height: 0px !important;
+padding: 0px !important;
+left: auto !important;
+right: 200px !important;
+}
+.tinkoffcredit-block label {
+margin-bottom: 4px !important;    
+}
+.gc-payment-method-card.made-RF {
+position: absolute;
+top: 0 !important;
+cursor: default;
+width: 0px !important;
+height: 0px !important;
+padding: 0px !important;
+left: auto !important;
+right: 200px !important;
+}
+#rra_button_rrllc1195_container::before{
+  content: "Рассрочка и кредит доступные для жителей Казахстана и Беларуси";
+  display: block;
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #292929;
+  margin-bottom: 10px;
+  width: 400px;
+}
+@media screen and (max-width: 768px) {
+#rra_button_rrllc1195_container::before{
+  content: "Рассрочка и кредит доступные для жителей Казахстана и Беларуси";
+  display: block;
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #292929;
+  margin-bottom: 10px;
+  width: 90%;
+}
+}
+
+
+.xdget-row.row {
+width: 100%;
+margin: 0 auto;
+margin-bottom: 30px;
+}
+
+
+
+
 
 .xdget-payform .table td {
 opacity: 0 !important; 
@@ -290,7 +366,7 @@ border-radius: 15px 15px 0px 0px;
 background: #fff !important;
 height: 300px;
 margin: 15px auto 40px; /* Центрирование блока по горизонтали */
-padding: 0 20px; /* Отступы внутри блока (по бокам) */
+padding: 0 0px; /* Отступы внутри блока (по бокам) */
 padding-bottom: 40px;
 border-radius: 0px 0px 15px 15px;
 }
@@ -561,7 +637,6 @@ margin-top: 0 !important;
 width: 450px;
 text-align: center;
 background: #fff;
-margin-top: 40px;
 padding-bottom: 20px;
 padding-top: 20px;
 border-radius: 15px 15px 0px 0px;
