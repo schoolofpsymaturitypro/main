@@ -106,6 +106,35 @@ margin: 0 auto;
 margin-bottom: 30px;
 }
 
+#rra_button_rrllc664_container::before{
+  content: "Рассрочка и кредит доступные для жителей Казахстана и Беларуси";
+  display: block;
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #292929;
+  margin-bottom: 10px;
+  width: 400px;
+}
+@media screen and (max-width: 768px) {
+#rra_button_rrllc664_container::before{
+  content: "Рассрочка и кредит доступные для жителей Казахстана и Беларуси";
+  display: block;
+  margin-top: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #292929;
+  margin-bottom: 10px;
+  width: 90%;
+}
+}
+
 
 
 
