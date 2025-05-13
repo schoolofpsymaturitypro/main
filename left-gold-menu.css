@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 /* Добавляем новые иконки через ::before */
 
+@media screen and (min-width: 768px) {
+.gc-modal .modal-dialog {
+left: 800px !important;    
+}
+}
+
 .common-banner-wrapper{
 z-index: 9999999 !important;
 }
