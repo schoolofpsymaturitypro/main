@@ -6,8 +6,14 @@
 .container{
 margin-top: 70px !important;
 }
-
 }
+
+@media screen and (max-width: 768px) {
+.user-state-need_accomplish .user-state-label {
+margin-left: 100px !important;    
+}
+}
+
 .user-state-has_mission .user-state-label {
 position: absolute;    
 }
