@@ -6,6 +6,12 @@
 .gc-modal .modal-dialog {
 left: 800px !important;    
 }
+.gc-notice-modal .modal-dialog {
+margin-left: 200px;   
+}
+.confirm-email-popup-form .btn-success{
+padding: 10px 20px !important;    
+}
 }
 
 .common-banner-wrapper{
