@@ -214,7 +214,7 @@ transition: width 0.3s ease !important;
 .modal-block-content.block-box.col-md-12{
 width: 65vw !important;
 margin-left: 150px !important;
-margin-top: 100px !important;
+/margin-top: 100px !important;
 }
 
 
