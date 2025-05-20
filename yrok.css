@@ -536,7 +536,7 @@ transition: width 0.3s ease !important;
 /* Применяем стили ко всем .row, но исключаем .col-md-12 и .text-center внутри .row */
 
 .modal-block-content.block-box.col-md-12{
-margin-top: 80px !important;
+/margin-top: 80px !important;
 padding-left: 0px;
 }
 .lt-lesson-mission-block .col-md-12 {
