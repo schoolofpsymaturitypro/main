@@ -218,7 +218,7 @@ margin-left: 150px !important;
 
 
 .center-block{
-max-width: 100% !important;    
+-width: 100% !important;    
 }
 .btn-success {
 background: linear-gradient(90deg, #FAE9CA 15%, #FFF8EB 49.5%, #FFF0D5 85%) !important;
@@ -303,6 +303,9 @@ border: 0px !important;
     }
 }
 @media screen and (max-width: 768px) {
+.lite-page.block-set{
+margin-top: 80px !important;
+}
 .container{
     max-width: 90vw !important;
     margin: 0 auto !important;
