@@ -561,6 +561,7 @@ position: absolute;
 }
 
 .user-state-label-ex {
+position: absolute !important;
 color: #BF3939 !important;   
 top: 15px !important;
 left: 120px !important;
