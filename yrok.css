@@ -20,9 +20,9 @@ position: relative;
 }
 .text-left {
 text-align: left !important;    
-max-width: 90%;
+/max-width: 90%;
 display: block !important;
-padding-right: 0px !important;
+/padding-right: 0px !important;
 }
 .lt-block-wrapper .container .row{
 /margin-top: 55px;
