@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
+
 :root {
     --content-width: 1200px !important; /* Ширина контента */
     --parent-wv: 100vw !important;      /* Ширина родительского элемента или окна браузера */
 }
 @media (min-width: 768px) {
+.center-block {
+    max-width: 100% !important;
+    margin-bottom: 20px !important;
+}
 html body{
         --container-width: min(var(--content-width), calc(var(--parent-wv, 100vw) - 300px - 20px - 36px)) !important;
     }
