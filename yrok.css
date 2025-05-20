@@ -507,7 +507,9 @@ background: #FFEECE
 }
 
 .container{
-padding: 0px;
+padding-left: 15px !important;
+padding-right: 15px !important;
+/padding: 0px;
 }
 .col-md-12{
 padding: 0;        
