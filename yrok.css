@@ -304,7 +304,7 @@ border: 0px !important;
 }
 @media screen and (max-width: 768px) {
 .container{
-    max-width: 80vw !important;
+    max-width: 90vw !important;
     margin: 0 auto !important;
 }
 .row{
