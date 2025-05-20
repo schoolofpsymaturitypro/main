@@ -1,6 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
+:root {
+    --content-width: 1200px !important; /* Ширина контента */
+    --parent-wv: 100vw !important;      /* Ширина родительского элемента или окна браузера */
+}
+@media (min-width: 768px) {
+html body{
+        --container-width: min(var(--content-width), calc(var(--parent-wv, 100vw) - 300px - 20px - 36px)) !important;
+    }
+
+/#gcAccountUserMenu ~ .gc-main-content.with-left-menu > .container, #gcAccountUserMenu ~ .gc-main-content.with-left-menu > .page-full-block > .main-page-block > .container{
+    width: var(--container-width) !important;
+    margin: 0 auto;
+}
+#gcAccountUserMenu ~ .gc-main-content.with-left-menu .lite-page.block-set {
+    width: var(--container-width) !important;
+    margin: 0 auto;
+}
+.container{
+width: calc(100vw - 280px) !important; 
+margin-left: 0px !important;
+margin-right: 0px !important;
+padding-right: 0px !important;
+    }
+}
+
+
 @media screen and (min-width: 768px) {
 .vhi-root{
 max-width: 1000px !important;
