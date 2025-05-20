@@ -34,15 +34,6 @@ padding-right: 0px !important;
 z-index: 9999;
 position: relative    
 }
-
-.container{
-    max-width: 90vw !important;
-    margin: 0 auto !important;
-}
-.row{
-    max-width: 90vw !important;
-    margin: 0 auto !important;
-}
 h1 a {
 font-family: 'Montserrat'!important;
 font-style: normal !important;
@@ -312,6 +303,14 @@ border: 0px !important;
     }
 }
 @media screen and (max-width: 768px) {
+.container{
+    max-width: 90vw !important;
+    margin: 0 auto !important;
+}
+.row{
+    max-width: 90vw !important;
+    margin: 0 auto !important;
+}
 .standard-page-content {
 z-index: 9999;
 position: relative    
