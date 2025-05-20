@@ -303,6 +303,10 @@ border: 0px !important;
     }
 }
 @media screen and (max-width: 768px) {
+.question-answer-block.col-md-12 {
+max-width: 80%;
+margin: 0 auto;    
+}
 .lite-page.block-set{
 margin-top: 80px !important;
 }
