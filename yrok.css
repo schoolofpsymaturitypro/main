@@ -307,7 +307,7 @@ border: 0px !important;
 margin-top: 80px !important;
 }
 .container{
-    max-width: 90vw !important;
+    /max-width: 90vw !important;
     margin: 0 auto !important;
 }
 /.row{
