@@ -334,6 +334,12 @@ border: 0px !important;
     }
 }
 @media screen and (max-width: 768px) {
+
+.row .files-row{
+max-width: 100%;
+overflow: hidden;
+}
+
 .question-answer-block.col-md-12 {
 max-width: 80%;
 margin: 0 auto;    
