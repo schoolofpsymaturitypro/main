@@ -562,8 +562,9 @@ position: absolute;
 
 .user-state-label-ex {
 color: #BF3939 !important;   
-top: auto !important;
-bottom: 40px !important;
+top: 15px !important;
+left: 120px !important;
+/bottom: 40px !important;
 }
 
 .lesson-date {
