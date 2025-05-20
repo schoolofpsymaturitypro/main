@@ -211,8 +211,8 @@ transition: width 0.3s ease !important;
 /* Применяем стили ко всем .row, но исключаем .col-md-12 и .text-center внутри .row */
 
 .modal-block-content.block-box.col-md-12{
-width: 65vw !important;
-margin-left: 150px !important;
+/width: 65vw !important;
+/margin-left: 150px !important;
 /margin-top: 100px !important;
 }
 
@@ -540,7 +540,7 @@ background-image: url('https://static.tildacdn.com/tild3365-3531-4335-b239-35303
 background-repeat: no-repeat !important;
 background-size: cover !important;
 background-position: center !important;
-width: 100vw !important;
+/width: 100vw !important;
 left: 0px;
 }
 
